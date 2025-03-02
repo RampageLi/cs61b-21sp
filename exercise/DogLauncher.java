@@ -1,7 +1,9 @@
 public class DogLauncher {
     public static void main(String[] args) {
-        Dog dog = new Dog(1);
+        Dog d1 = new Dog(1);
+        Dog d2 = new Dog(10);
 
-        dog.makeNoise();
+        Dog bigger = Dog.compare(d1, d2);
+        bigger.makeNoise();
     }
 }

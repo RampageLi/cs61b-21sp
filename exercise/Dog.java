@@ -12,4 +12,11 @@ public class Dog {
             System.out.println("woooof!");
         }
     }
+
+    public static Dog compare(Dog d1, Dog d2) {
+        if (d1.weightInPounds > d2.weightInPounds) {
+            return d1;
+        }
+        return d2;
+    }
 }
